@@ -4,7 +4,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:4200", // O el dominio donde se encuentra tu frontend Angular
+    origin: "http://awsangularbucket.s3-website.us-east-2.amazonaws.com",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     allowedHeaders: "Content-Type,Authorization",
   })
