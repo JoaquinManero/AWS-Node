@@ -4,9 +4,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://awsangularbucket.s3-website.us-east-2.amazonaws.com",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    allowedHeaders: "Content-Type,Authorization",
+    origin: "http://localhost:4200",
   })
 );
 
