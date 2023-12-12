@@ -6,7 +6,7 @@ app.use(cors());
 
 app.get("/", (req, res) => {
   console.log("Solicitud recibida en /");
-  res.json("Hello from the backend!");
+  res.json("Hello from the backend!!");
 });
 
 const PORT = 3000;
