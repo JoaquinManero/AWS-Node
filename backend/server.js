@@ -28,6 +28,8 @@ app.post("/files", async (req, res) => {
 
 app.get("/files", async (req, res) => {
   const result = await getFiles();
+  res.json({ result });
+
   console.log(
     "Solicitud de GET recibida de datos almacenados en AWS S3 en /files",
     result
