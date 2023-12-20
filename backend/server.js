@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.post("/files", async (req, res) => {
   const result = await uploadFile(req.files.file);
   console.log(
-    "Solicitud de POST recibida en /files. Archivo almacenado correctamente en AWS S3 !",
+    "Solicitud de POST recibida en /files. Archivo almacenado correctamente en AWS S3!",
     result
   );
 });
