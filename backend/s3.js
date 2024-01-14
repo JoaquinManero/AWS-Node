@@ -15,7 +15,7 @@ import {
 } from "./config.js";
 
 const client = new S3Client({
-  region: "us-east-2",
+  region: AWS_BUCKET_REGION,
   credentials: {
     accessKeyId: AWS_PUBLIC_KEY,
     secretAccessKey: AWS_SECRET_KEY,
